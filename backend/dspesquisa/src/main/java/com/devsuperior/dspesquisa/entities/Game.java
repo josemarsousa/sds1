@@ -33,6 +33,9 @@ public class Game implements Serializable {
     @OneToMany(mappedBy = "game")/*game = name of atribute in Record*/
     private List<Record> records = new ArrayList<>();
 
+    public Game(){        
+    }
+
     public Game(Long id, String title, Platform platform, Genre genre) {
         this.id = id;
         this.title = title;
